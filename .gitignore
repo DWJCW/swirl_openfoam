@@ -1,2 +1,7 @@
 **/polyMesh/
 /CAD/mesh_files
+**/[1-9]*/
+**/0.*/
+**/processor*/
+!**/0.org/
+
