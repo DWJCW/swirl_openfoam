@@ -1,0 +1,64 @@
+/*---------------------------------------------------------------------------*\
+| =========                 |                                                 |
+| \\      /  F ield         | OpenFOAM: The Open Source CFD Toolbox           |
+|  \\    /   O peration     | Version:  2112                                  |
+|   \\  /    A nd           | Website:  www.openfoam.com                      |
+|    \\/     M anipulation  |                                                 |
+\*---------------------------------------------------------------------------*/
+Build  : _80318542-20220301 OPENFOAM=2112 patch=220310 version=2112
+Arch   : "LSB;label=32;scalar=64"
+Exec   : icoFoam -parallel
+Date   : Apr 18 2022
+Time   : 21:15:02
+Host   : duanwuchen-HP-ZBook-Studio-G7-Mobile-Workstation
+PID    : 70988
+I/O    : uncollated
+Case   : /home/duanwuchen/OpenFOAM/duanwuchen-v2112/run/research/swirl_openfoam/cases/swril_ico
+nProcs : 4
+Hosts  :
+(
+    (duanwuchen-HP-ZBook-Studio-G7-Mobile-Workstation 4)
+)
+Pstream initialized with:
+    floatTransfer      : 0
+    nProcsSimpleSum    : 0
+    commsType          : nonBlocking
+    polling iterations : 0
+trapFpe: Floating point exception trapping enabled (FOAM_SIGFPE).
+fileModificationChecking : Monitoring run-time modified files using timeStampMaster (fileModificationSkew 5, maxFileModificationPolls 20)
+allowSystemOperations : Allowing user-supplied system call operations
+
+// * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
+Create time
+
+Create mesh for time = 0
+
+
+PISO: Operating solver in PISO mode
+
+Reading transportProperties
+
+Reading field p
+
+Reading field U
+
+Reading/calculating face flux field phi
+
+
+Starting time loop
+
+Time = 1
+
+Courant Number mean: 0.0813814 max: 1343.77
+smoothSolver:  Solving for Ux, Initial residual = 0, Final residual = 0, No Iterations 0
+smoothSolver:  Solving for Uy, Initial residual = 0, Final residual = 0, No Iterations 0
+smoothSolver:  Solving for Uz, Initial residual = 1, Final residual = 2.76211e-05, No Iterations 1000
+DICPCG:  Solving for p, Initial residual = 1, Final residual = 0.0456412, No Iterations 151
+time step continuity errors : sum local = 0.00865829, global = 0.000197421, cumulative = 0.000197421
+DICPCG:  Solving for p, Initial residual = 0.0133429, Final residual = 9.81855e-07, No Iterations 202
+time step continuity errors : sum local = 0.000271946, global = -3.82414e-06, cumulative = 0.000193596
+ExecutionTime = 11.05 s  ClockTime = 11 s
+
+End
+
+Finalising parallel run
